@@ -1,0 +1,94 @@
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 3px solid red; */
+}
+
+/* <<< Header >>> */
+
+header{
+    width: 100%;
+    padding: 47px 80px 47px 64px;
+    background-color:  #13345B;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px solid rgb(98, 36, 177); */
+}
+
+.header_logo{
+    height: 206px;
+}
+
+.header_nav_elements{
+    display: flex;
+    gap: 52px;
+    font-family: 'Inter'; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.home,
+.product,
+.contact{
+    color: #FDD504;
+}
+
+li a:hover{
+    border-bottom: 2px solid #FDD504;
+    padding-bottom: 25px;
+}
+
+.header_icons{
+    color: #FDD504;
+    font-size: 2.25rem;
+    display: flex;
+    gap: 28px;
+}
+
+.registration{
+    width: 100%;
+    height: 1552px;
+    display: flex;
+    justify-content: space-between;
+    padding: 58px 0px 76px 0px;
+    background-color: #FFFFFF;
+}
+
+footer{
+    width: 100%;
+    padding: 110px 80px 110px 19px;
+    background-color:  #13345B;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px solid rgb(98, 36, 177); */
+}
+
+.footer_logo{
+    height: 199px;
+}
+
+.footer_icons_div{
+    font-size: 4rem;
+    display: flex;
+    gap: 69px;
+}
+
+.fa-square-facebook{
+    color: #15C1E7;
+}
+
+.fa-instagram{
+    color: #FB0110;
+}
+
+.fa-twitter{
+    color: #75A1F3;
+}
+
+.fa-youtube{
+    color:#FDD504;
+}
