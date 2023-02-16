@@ -48,6 +48,8 @@ li a:hover{
     gap: 28px;
 }
 
+/* <<< Main >>> */
+
 .registration{
     width: 100%;
     height: 1552px;
@@ -55,6 +57,22 @@ li a:hover{
     justify-content: space-between;
     padding: 58px 0px 76px 0px;
     background-color: #FFFFFF;
+}
+
+.home_bk{
+    background-image: url("../images/background_photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.product_bk{
+    background-image: url("../images/product_photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(20%);
 }
 
 footer{
