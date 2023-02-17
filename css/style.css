@@ -188,6 +188,45 @@ input[type="checkbox"]{
     height: 61px;
 }
 
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button[type="submit"]{
+    width: 535px;
+    height: 108px;
+    background-color: #FDD504;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Inter';font-style: normal;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+input[type="reset"]{
+    width: 535px;
+    height: 108px;
+    background-color: #15C1E7;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Inter';font-style: normal;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+button[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #20e451;
+}
+
+input[type="reset"]:hover{
+    cursor: pointer;
+    background-color: #e83232;
+}
 
 
 
