@@ -2,18 +2,25 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    padding-top: 292px;
     /* border: 3px solid red; */
 }
 
 /* <<< Header >>> */
 
 header{
-    width: 100%;
+    max-width: inherit;
+    width: inherit;
     padding: 47px 80px 47px 64px;
     background-color:  #13345B;;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
     /* border: 3px solid rgb(98, 36, 177); */
 }
 
@@ -50,12 +57,9 @@ li a:hover{
 
 /* <<< Main >>> */
 
-.registration{
+main{
     width: 100%;
     height: 1552px;
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
     padding: 58px 108px 76px 108px;
     background-color: #FFFFFF;
 }
@@ -76,32 +80,31 @@ li a:hover{
     filter: grayscale(20%);
 }
 
-.regist_title{
+main h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 3rem;
     color: #13345B;
-    /* text-align: center;
-    margin: 59px auto; */
-    /* display: flex;
-    flex-wrap: wrap; */
     margin-bottom: 139px;
-
 }
 
 
-.form_top{
-    width: 90%;
+.full_name{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 152px;
 }
 
-.top_left,
-.top_right{
-    width: 45%;
+.age_mail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 152px;
 }
 
 #name,
@@ -109,9 +112,6 @@ li a:hover{
 #lastname,
 #email{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
     border: none;
     outline: none;
     border-bottom: 5px solid #15C1E7;
@@ -125,7 +125,8 @@ li a:hover{
     margin-bottom: 62px;
 }
 
-.form_top label{
+.full_name label,
+.age_mail label{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -133,12 +134,9 @@ li a:hover{
     color: #13345B;
 }
 
-.form_bottom{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.schedule{
     margin-top: 194px;
+    margin-bottom: 111px;
 }
 
 .schedule,
@@ -147,38 +145,49 @@ li a:hover{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.form_bottom label{
+h3,
+h4{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 2rem;
     color: #15C1E7;
-}
-
-.language{
-    margin-top: 111px;
-    margin-bottom: 111px;
+    margin-right: 96px;
 }
 
 .schedule label,
 .language label{
-    width: 437px;
-}
-
-.choose label{
-    width: 700px;
-}
-
-#schedule[Full-Time],
-#language[Angular]{
+    gap: 115px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #13345B;
+    width: 437px;
 }
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: 36px;
+    height: 36px;
+}
+
+.choose{
+    margin-top: 111px;
+    margin-bottom: 166px
+}
+.choose h4{
+    width: 541px;
+}
+
+#choose input{
+    width: 218px;
+    height: 61px;
+}
+
 
 
 
@@ -219,3 +228,18 @@ footer{
 .fa-youtube{
     color:#FDD504;
 }
+
+.fa-square-facebook:hover,
+.fa-twitter:hover{
+    cursor: pointer;
+    transform: skewY(45deg);
+    transition-duration: 1.5s;
+}
+
+.fa-instagram:hover,
+.fa-youtube:hover{
+    cursor: pointer;
+    transform: skewX(45deg);
+    transition-duration: 1.5s;
+}
+

@@ -44,70 +44,87 @@
         </header>
 
 
-        <main class="registration">
+        <main>
 
-              <!-- <div class="regist_title"><h2>Contact Us</h2></div> -->
+            <h2>Contact Us</h2>
 
-              <form action="">
+            <form action="">
 
-                <div class="form_top">
-
-                    <div class="top_left">
-                        <div class="firstname">
-                            <label for="name">First Name</label>
-                            <input type="text" name="firstname" id="name"/>
-                        </div>
-    
-                        <div class="age">
-                            <label for="age">Age</label>
-                            <input type="number" name="Age" id="age"/>
-                        </div>
+                <div class="full_name">
+                    
+                    <div class="firstname">
+                        <label for="name">First Name</label>
+                        <input type="text" name="firstname" id="name"/>
                     </div>
 
-                    <div class="top_right">
-                        <div class="lastname">
-                            <label for="lastname">Last Name</label>
-                            <input type="text" name="lastname" id="lastname"/>
-                        </div>
-    
-                        <div class="firstname">
-                            <label for="email">Email Address</label>
-                            <input type="email" name="email" id="email"/>
-                        </div>
+                    <div class="lastname">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname"/>
                     </div>
 
                 </div>
 
-                <div class="form_bottom">
+                <div class="age_mail">
 
-                    <div class="schedule">
-
-                        <label for="schedule">The schedule of work you are interested in</label>
-                        <input type="radio" name="schedule" id="schedule">Full-Time
-                        <input type="radio" name="schedule" id="schedule">Part-Time
-                        <input type="radio" name="schedule" id="schedule">Remote
-
+                    <div class="age">
+                        <label for="age">Age</label>
+                        <input type="number" name="Age" id="age"/>
                     </div>
-
-                    <div class="language">
-
-                        <label for="languages">Select the programming languages, you know</label>
-                        <input type="checkbox" name="language" id="language">Angular
-                        <input type="checkbox" name="language" id="language">Python
-                        <input type="checkbox" name="language" id="language">Javascript
-
+    
+                    <div class="email">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email"/>
                     </div>
+                    
 
-                    <div class="choose">
-
-                        <label for="Attach">Attach any supporting documents (resume, CV, cover letter, etc. </label>
-                        <input type="file" name="choose" id="choose">
-
-                    </div>
                 </div>
 
+                <div class="schedule">
 
-              </form>
+                    <h3>The schedule of work you are interested in</h3>
+
+                    <input type="radio" name="schedule" id="schedule">
+                    <label for="schedule">Full-Time</label>
+                    <input type="radio" name="schedule" id="schedule">
+                    <label for="schedule">Part-Time</label>
+                    <input type="radio" name="schedule" id="schedule">
+                    <label for="schedule">Remote</label>
+
+                </div>
+
+                <div class="language">
+
+                    <h3>Select the programming languages, you know</h3>
+
+                    <input type="checkbox" name="language" id="language">
+                    <label for="languages">Angular</label>
+                    <input type="checkbox" name="language" id="language">
+                    <label for="languages">Python</label>
+                    <input type="checkbox" name="language" id="language">
+                    <label for="languages">Javascript</label>
+
+                </div>
+
+                <div class="choose">
+
+                    <h4>Attach anysupporting documents (resume, CV,cover letter, etc.)</h4>
+                    
+                    <input type="file" name="choose"id="choose">
+                    <!-- <label for="choose"></label> -->
+
+                </div>
+
+                <div class="buttons">
+
+                    <button type="submit">SEND MESSAGE</button>
+
+                    <input type="reset" name="reset" id="reset">
+
+                </div>
+                
+
+
+            </form>
              
 
         </main>
